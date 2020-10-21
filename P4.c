@@ -8,7 +8,7 @@
 //1)cant use the operator ^, need to use pow() from math.h library
 //2)stack creation with create(),push(), pop(),isempty(),isfull().
 
-//Referances:
+//References:
 //1)https://www.geeksforgeeks.org/stack-set-2-infix-to-postfix/
 //2)Lectre PPT and DSA applications Sartaj Sahni
 
