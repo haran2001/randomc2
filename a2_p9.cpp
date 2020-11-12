@@ -72,7 +72,31 @@ struct node* deleteNode(struct node* root, int key){
 	return root;
 }
 
+unsigned int getLeafCount(struct node* node)  
+{  
+    if(node == NULL)      
+        return 0;  
+    if(node->left == NULL && node->right == NULL)  
+        return 1;          
+    else
+        return getLeafCount(node->left)+  
+            getLeafCount(node->right);  
+}  
 
+int maxDepth(node* node)  
+{  
+    if (node == NULL)  
+        return 0;  
+    else
+    {  
+        int lDepth = maxDepth(node->left);  
+        int rDepth = maxDepth(node->right);  
+      
+        if (lDepth > rDepth)  
+            return(lDepth + 1);  
+        else return(rDepth + 1);  
+    }  
+}  
 int main(){
 	struct node *root = NULL;
 	root = insert(root, 10);
