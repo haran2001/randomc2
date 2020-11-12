@@ -35,7 +35,6 @@ void printLevelOrder(struct node* root){
         }
 }
 
-
 struct node** createQueue(int *front, int *rear){
     struct node **queue = (struct node**)malloc(sizeof(struct node*));
     *front = *rear = 0;
